@@ -1,0 +1,63 @@
+#header{
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.nav-link{
+    color: black;
+    margin-left: 60px;
+}
+
+#submit{
+    background-color: rgb(255, 187, 0);
+    width: 135px;
+    border: none;
+    font-weight: bold;
+}
+
+.select{
+    background-color: #f1c40f;
+}
+.select:hover {
+    background-color: orange;
+    transition: background-color 1s;
+  }
+  .card-header {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  a{
+      text-decoration: none;
+      padding: 0 10px;
+      color: #000;
+  }
+  @media (max-width: 650px) {
+    #nav-bar {
+      margin-top: 10px !important;
+      width: 100% !important;
+      display: flex !important;
+      flex-direction: column !important;
+      text-align: center !important;
+      padding: 0 !important;
+    }
+    #header{
+        margin-top: 15px !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+    .icon{
+        display: none !important;
+    }
+    .description {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 0 !important;
+        height: 150px !important;
+      }
+}
+
+  
