@@ -7,132 +7,155 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
     <link rel="stylesheet" href="style.css">
+    <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body style="font-family: 'Lato', sans-serif; background-color: #eee;" >
-    <div class="container-fluid" style="position: relative;">
-        <div class="row" id="header">
-            <header class="d-flex ">
-                <div class="col-lg-7 col-xxl-7 col-xl-7 col-md-12 col-sm-12">
-                    <div class="position-fixed">
+<body style="font-family: 'Lato', sans-serif; background-color: #eee; overflow-x: hidden;" >
+        <header class="d-flex fixed-top" id="header">
+            <div class="container align-items-center justify-content-between">
+                <div class="row">
+                    <div class="images col-md-6 col-sm-12">
                         <img src="images/product-landing-page-logo.png" alt="" id="header-img" width="300px">
                     </div>
-                </div>
-                <div class="col-lg-5 col-xxl-5 col-xl-5 col-md-12 col-sm-12">
-                    <nav id="nav-bar" class="float-end d-flex position-fixed">
-                        <a class="nav-link" href="">Freatures</a>
-                        <a class="nav-link" href="">How It Works</a>
-                        <a class="nav-link" href="">Pricing</a>
+                    <nav id="nav-bar" class="nav-bar col-md-6 col-sm-12">
+                        <ul>
+                            <li><a class="nav-link" href="">Freatures</a></li>
+                            <li><a class="nav-link" href="">How It Works</a></li>
+                            <li><a class="nav-link" href="">Pricing</a></li>
+                        </ul>
                     </nav>
-                </div> 
-            </header>
-        </div>
+                </div>
+            </div> 
 
-        <main class="row d-flex" style="justify-content: center; margin-top: 80px;" >
+        </header>
+
+        <main class="row d-flex" style="justify-content: center; padding-top: 10rem;;" >
             <form class="col-lg-6 col-xxl-6 col-xl-6 col-md-12 col-sm-12 text-center" action="https://www.freecodecamp.com/email-submit " id="form">
                 <p class="h2 mb-3" id="description">Handcrafted, home-made masterpieces</p>
                 <p><input type="email" name="email" id="email" placeholder="Enter your email address" required></p>
                 <p><input type="submit" name="get started" id="submit" value="GET STARTED"></p>
             </form>
 
-          <div class="row">
-            <div class="col-lg-10 col-xxl-10 col-xl-10 col-md-12 col-sm-12 materials d-flex mt-5">
-                <div class="icon d-flex" style="color: darkorange; width: 20vw; justify-content: center;">
-                    <i class="fa fa-3x fa-fire"></i>
+         <section>
+            <div class="row">
+                <div class="col-sm-12 materials d-flex mt-5">
+                    <div class="icon d-flex" style="color: darkorange; width: 20vw; justify-content: center;">
+                        <i class="fa fa-3x fa-fire"></i>
+                    </div>
+                    <div class="description d-flex" style="justify-content: center; width: 80vw; flex-direction: column; padding: 5px;">
+                        <h2 style="font-weight: bold;">Premium Materials</h2>
+                        <p>
+                            Our trombones use the shiniest brass which is sourced locally. This
+                            will increase the longevity of your purchase.
+                        </p>
+                    </div>
                 </div>
-                <div class="description d-flex" style="justify-content: center; width: 80vw; flex-direction: column; padding: 5px;">
-                    <h2 style="font-weight: bold;">Premium Materials</h2>
-                    <p>
-                        Our trombones use the shiniest brass which is sourced locally. This
-                        will increase the longevity of your purchase.
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-10 col-xxl-10 col-xl-10 col-md-12 col-sm-12 shipping d-flex">
-                <div class="icon d-flex" style="color: darkorange; width: 20vw; justify-content: center;">
-                    <i class="fa fa-3x fa-truck"></i>
-                </div>
-                <div class="description d-flex" style="justify-content: center; width: 80vw; flex-direction: column; padding: 5px;">
-                    <h2 style="font-weight: bold;">Fast Shipping</h2>
-                    <p>
-                      We make sure you recieve your trombone as soon as we have finished 
-                      making it. We also provide free returns if you are not satisfied.
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-10 col-xxl-10 col-xl-10 col-md-12 col-sm-12 assurance d-flex">
-                <div class="icon d-flex" id="icon" style="color: darkorange; width: 20vw; justify-content: center;">
-                    <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
-                </div>
-                <div class="description d-flex" style="justify-content: center; width: 80vw; flex-direction: column; padding: 5px;">
-                    <h2 style="font-weight: bold;">Quality Assurance</h2>
-                    <p>
-                      For every purchase you make, we will ensure there are no damages or 
-                      faults and we will check and test the pitch of your instrument.
-                    </p>
-                </div>
-            </div>
-          </div>
-
-            <div class="video d-flex mt-5" style="justify-content: center;">
-                <iframe src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
-             frameborder="0" height="315" style="max-width: 560px; width: 100%;"></iframe>
-            </div>
-
-            <div class="row mt-5 d-flex mb-5" style="justify-content: center;">
-                <div class="col-lg-3 col-xxl-3 col-xl-3 col-md-12 col-sm-12" id="trombone">
-                    <div class="card mb-3" id="tenor" style="border: 1px solid; height: 18rem; background-color: #eee;">
-                        <div class="card-header d-flex" style="border: none; justify-content: center;">
-                            TENOR TROMBONE
+              </div>
+    
+                <div class="row">
+                    <div class="col-sm-12 shipping d-flex">
+                        <div class="icon d-flex" style="color: darkorange; width: 20vw; justify-content: center;">
+                            <i class="fa fa-3x fa-truck"></i>
                         </div>
-                        <div class="text-center mt-3">
-                            <h2>$600</h2>
-                            <p>Lorem ipsum. <br>
-                                Lorem ipsum. <br>
-                                Lorem ipsum dolor. <br>
-                                Lorem ipsum.</p>
-                            <button class="select p-2" style="width: 100px; border: none;">
-                                SELECT
-                            </button>
+                        <div class="description d-flex" style="justify-content: center; width: 80vw; flex-direction: column; padding: 5px;">
+                            <h2 style="font-weight: bold;">Fast Shipping</h2>
+                            <p>
+                              We make sure you recieve your trombone as soon as we have finished 
+                              making it. We also provide free returns if you are not satisfied.
+                            </p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-xxl-3 col-xl-3 col-md-12 col-sm-12" id="trombone">
-                    <div class="card mb-3" id="bass" style="border: 1px solid; height: 18rem; background-color: #eee;">
-                        <div class="card-header text-center" style="border: none;">
-                            BASS TROMBONE
+    
+                <div class="row">
+                    <div class="col-sm-12 assurance d-flex">
+                        <div class="icon d-flex" id="icon" style="color: darkorange; width: 20vw; justify-content: center;">
+                            <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
                         </div>
-                        <div class="text-center mt-3">
-                            <h2>$900</h2>
-                            <p>Lorem ipsum. <br>
-                                Lorem ipsum. <br>
-                                Lorem ipsum dolor. <br>
-                                Lorem ipsum.</p>
-                            <button class="select p-2" style="width: 100px; border: none;">
-                                SELECT
-                            </button>
+                        <div class="description d-flex" style="justify-content: center; width: 80vw; flex-direction: column; padding: 5px;">
+                            <h2 style="font-weight: bold;">Quality Assurance</h2>
+                            <p>
+                              For every purchase you make, we will ensure there are no damages or 
+                              faults and we will check and test the pitch of your instrument.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-xxl-3 col-xl-3 col-md-12 col-sm-12" id="trombone">
-                    <div class="card" id="valve" style="border: 1px solid; height: 18rem; background-color: #eee;">
-                        <div class="card-header text-center" style="border: none;">
-                            VALVE TROMBONE
-                        </div>
-                        <div class="text-center mt-3">
-                            <h2>$600</h2>
-                            <p>Lorem ipsum. <br>
-                                Lorem ipsum. <br>
-                                Lorem ipsum dolor. <br>
-                                Lorem ipsum.</p>
-                            <button class="select p-2" style="width: 100px; border: none;">
-                                SELECT
-                            </button>
+         </section>
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="com-sm-12">
+                        <div class="video d-flex mt-5" style="justify-content: center;">
+                            <iframe src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+                         frameborder="0" height="315" class="iframe-fluid"  style="max-width: 560px; width: 100%;"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row mt-5 mb-5">
+                    <div class="col-md-4 col-sm-12 m-" id="trombone">
+                        <div class="card mb-3" id="tenor" style="border: 1px solid; height: 18rem; background-color: #eee;">
+                            <div class="card-header d-flex" style="border: none; justify-content: center;">
+                                TENOR TROMBONE
+                            </div>
+                            <div class="text-center mt-3">
+                                <h2>$600</h2>
+                                <p>Lorem ipsum. <br>
+                                    Lorem ipsum. <br>
+                                    Lorem ipsum dolor. <br>
+                                    Lorem ipsum.</p>
+                                <button class="select p-2" style="width: 100px; border: none;">
+                                    SELECT
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12" id="trombone">
+                        <div class="card mb-3" id="bass" style="border: 1px solid; height: 18rem; background-color: #eee;">
+                            <div class="card-header text-center" style="border: none;">
+                                BASS TROMBONE
+                            </div>
+                            <div class="text-center mt-3">
+                                <h2>$900</h2>
+                                <p>Lorem ipsum. <br>
+                                    Lorem ipsum. <br>
+                                    Lorem ipsum dolor. <br>
+                                    Lorem ipsum.</p>
+                                <button class="select p-2" style="width: 100px; border: none;">
+                                    SELECT
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-md-4 col-sm-12" id="trombone">
+                        <div class="card" id="valve" style="border: 1px solid; height: 18rem; background-color: #eee;">
+                            <div class="card-header text-center" style="border: none;">
+                                VALVE TROMBONE
+                            </div>
+                            <div class="text-center mt-3">
+                                <h2>$600</h2>
+                                <p>Lorem ipsum. <br>
+                                    Lorem ipsum. <br>
+                                    Lorem ipsum dolor. <br>
+                                    Lorem ipsum.</p>
+                                <button class="select p-2" style="width: 100px; border: none;">
+                                    SELECT
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
         </main>
         
           <div class="d-flex" style="justify-content: center;">
